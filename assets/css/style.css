@@ -1,0 +1,92 @@
+@font-face {
+    font-family: 'ja-main';
+    src: url('../fonts/07LogoTypeGothic7.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'en-main';
+    src: url('../fonts/FF4AGORALserif-500.otf') format('opentype');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'ja-main';
+    color: #f78989;
+    font-weight: normal;
+    font-size: 80px;
+}
+
+.content {
+    font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";  
+    font-size: 20px;
+}
+
+.bg-switcher {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/mansyuin1.jpg);
+    background-color:rgba(255,255,255,0.3);
+    background-blend-mode:lighten;
+    background-position: center center;
+    border-style: cover;
+    position: relative;
+}
+
+.firstView {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.firstView p {
+    color: #fff;
+}
+
+.firstView .icon {
+    width: 250px;
+}
+
+.firstView .ja-title {
+    font-family: 'ja-main';
+    font-size: 30px;
+    letter-spacing: 0.2em;
+}
+
+.firstView .en-title {
+    font-family: 'en-main';
+    font-size: 70px;
+    letter-spacing: 0.2em;
+}
+
+.big-title {
+    font-size: 100px;
+    font-family: 'ja-main';
+}
+
+.small-title {
+    font-size: 50px;
+}
+
+#about h3 {
+    color: #f1afc3;
+    font-family: 'en-main';
+    font-size: 30px;
+    letter-spacing: 0.1em;
+}
+
+.subtitle {
+    font-family: 'ja-main';
+    font-size: 25px;
+}
+
+#area-map img {
+    max-width: 1000px;
+    width: 100%;
+}
