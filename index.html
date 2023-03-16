@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>一乗寺観光</title>
     <link rel="stylesheet" href="assets/css/style.css">
-
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <header class="bg-switcher">
@@ -27,24 +29,97 @@
     </header>
     <section id="about">
         <h2><span class="big-title">一乗寺</span><span class="small-title">とは</span><span class="big-title">?</span></h2>
-        <h3>About Ichijoji</h3>
-        <div class="sentence">
-            <div class="subtitle">
-                <p>古き良き山麓の落ち着きのあるエリア。</p>
+        <p class="subtitle">About Ichijoji</p>
+        <div class="about-content">
+            <div class="explanation">
+                <div class="theme">
+                    <p>古き良き山麓の落ち着きのあるエリア。</p>
+                </div>
+                <div class="sentence">
+                    <p>
+                        喧騒を忘れて静かなひとときを過ごせるスポットが点在しています。一方近年は、名店がしのぎを削るラーメン街道などの新たな観光スポットも注目されています。都市部から少し離れた場所でゆったり自然を感じ、グルメを味わいませんか？
+                    </p>
+                </div>
             </div>
-            <div class="content">
-                <p>
-                    喧騒を忘れて静かなひとときを過ごせるスポットが点在しています。一方近年は、名店がしのぎを削るラーメン街道などの新たな観光スポットも注目されています。都市部から少し離れた場所でゆったり自然を感じ、グルメを味わいませんか？
-                </p>
+            <div class="spot">
+                <img src="assets/images/spot.PNG" alt="">
             </div>
-        </div>
-        <div class="spot">
-            <img src="assets/images/spot.PNG" alt="">
         </div>
     </section>
     <section id="area-map">
         <h2>観光エリアMAP</h2>
         <img src="assets/images/map.PNG" alt="">
     </section>
+    <section id="nature">
+        <div class="container">
+            <div class="title-img">
+                <img src="assets/images/nature.png" alt="">
+            </div>
+            <div class="content">
+                <h3><span class="underline">比叡山</span></h3>
+                <div class="slider">
+                    <img src="assets/images/spring_hiei.jpg" alt="" class="nature-img">
+                    <img src="assets/images/summer_hiei.jpg" alt="" class="nature-img">
+                    <img src="assets/images/autumn_hiei.jpg" alt="" class="nature-img">
+                    <img src="assets/images/winter_hiei.jpg" alt="" class="nature-img">
+                </div>
+                <div class="nature-sentence sentence">
+                    <p>
+                        比叡山は、滋賀・京都の県境に位置する、標高848mの山です。比叡山の山頂からは、京都市街を眺めることもできます。また、山の東側には天台宗の総本山である延暦寺もあります。<br>
+                        一乗寺からは雲母坂（きららざか）という古くから京都と延暦寺を往復する僧侶などが通った道があり、登山を楽しむことも可能です。<br>
+                        四季おりおりの変化を見せる比叡山を眺めたり、登山してみてはいかがですか？
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="history">
+        <div class="container">
+            <div class="title-img">
+                <img src="assets/images/history.png" alt="">
+            </div>
+            <div class="content">
+                <h3><span class="underline">宮本武蔵</span></h3>
+                <div class="card">
+                    <div class="card-sentence">
+                        <p class="sentence">
+                            宮本武蔵は、安土桃山時代から江戸時代初期にかけて活躍した、生涯無敗を誇った最強の剣豪です。二刀を携えて戦う二刀流を確立し、「五輪書」という伝書を書いています。日本のみならず世界中で最も有名な剣豪です。佐々木小次郎との勝負が有名ですが、実は一乗寺にもゆかりのある人物です。
+                        </p>
+                    </div>
+                    <div class="card-img">
+                        <img src="assets/images/icon.png" alt="">
+                    </div>
+                </div>
+                <h3><span class="underline">ゆかりの地</span></h3>
+                <div class="card">
+                    <div class="card-img">
+                        <img src="assets/images/icon.png" alt="">
+                    </div>
+                    <div class="card-sentence">
+                        <p class="card-title">一乗寺下り松</p>
+                        <p class="sentence">
+                            長年、上継がれ、現在4代目の「下り松」は、古くから旅人の目標とされた松の木です。<br>
+                            それだけでなく、「吉岡一門」との三度目の決闘となる、武蔵 vs 数百名の吉岡門弟の場となった「一乗寺下り松の決闘」が行われた場所でもあります。
+                        </p>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-sentence">
+                        <p class="card-title">八大神社</p>
+                        <p class="sentence">
+                            八大神社は決闘前に武蔵が参拝した神社として知られています。境内には、決闘当時の「下り松古木」がご神木として祀られ、宮本武蔵像が建っています。<br>
+決闘の日、八大神社前を通りかかった武蔵は足を止め、必勝祈願に拝殿の鈴を振ろうとしたが、そうせず頭を下げたのみで立ち去った話がある。この悟りが「神仏を尊んで神仏に恃（たの）まず」である。
+                        </p>
+                    </div>
+                    <div class="card-img">
+                        <img src="assets/images/icon.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id=""></section>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/slick.min.js"></script>
 </body>
 </html>
