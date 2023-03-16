@@ -48,8 +48,10 @@ p {
     background-color:rgba(255,255,255,0.3);
     background-blend-mode:lighten;
     background-position: center center;
-    border-style: cover;
+    background-size: cover;
+    display: flex;
     position: relative;
+    overflow: hidden;
 }
 
 .firstView {
@@ -164,11 +166,14 @@ p {
     margin-top: 50px;
 }
 
-#nature {
-    background-color: rgba(129,220,115,0.2);
+.session {
     text-align: center;
     padding: 1.5rem;
     position: relative;
+}
+
+#nature {
+    background-color: rgba(129,220,115,0.2);
 }
 
 .container {
@@ -209,9 +214,6 @@ p {
 
 #history {
     background-color: rgba(255,206,133,0.2);
-    text-align: center;
-    padding: 1.5rem;
-    position: relative;
 }
 
 .card {
@@ -246,4 +248,94 @@ p {
 
 .card-img img {
     width: 400px;
+}
+
+#spot {
+    background-color: rgba(171,179,255,0.2);
+}
+
+#spot .slick-initialized .slick-slide {
+    display: flex;
+    align-items: center;
+    padding: 50px 50px 0;
+    width: 80%;
+}
+
+.slider-card {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#spot .card-img {
+    width: 40%;
+}
+
+#food {
+    background-color: rgba(253,221,106,0.2);
+}
+
+#food .ramen-explanation {
+    width: 60%;
+    margin: 60px auto 0;
+    text-align-last: left;
+}
+
+.food-map {
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 60px;
+}
+
+.open-box {
+    display: none;
+    margin-top: 100px;
+}
+
+.open-btn {
+    margin-top: 50px;
+    width: 50px;
+    height: 50px;
+}
+
+.food-detail {
+    position: relative;
+    margin: 70px 70px 0;
+    padding: 10px;
+    border: solid 3px #FDDD6A;
+    text-align: center;
+}
+
+.food-detail .ramen-title {
+    position: absolute;
+    display: inline-block;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    padding: 0 10px;
+    font-size: 40px;
+    font-family: 'ja-main';
+    color: #444444;
+    background: #fff;
+}
+
+.food-detail .food-img {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 50px auto;
+    justify-content: space-between;
+}
+
+.food-img img {
+    width: 200px;
+
+}
+
+.food-detail .detail {
+    margin: 30px auto;
+    width: 60%;
+    text-align-last: left;
 }
