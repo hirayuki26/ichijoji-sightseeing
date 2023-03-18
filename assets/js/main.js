@@ -5,6 +5,14 @@ $(function($) {
     //     loop: true
     // });
 
+    $('.hamburger').click(function() {
+        $('.hamburger, .navigation').toggleClass('active');
+    });
+
+    $('.nav-items-item').click(function() {
+        $('.hamburger, .navigation').toggleClass('active');
+    });
+
     $('.slider').slick({
         arrows: true,
         autoplay: false,

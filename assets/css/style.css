@@ -35,6 +35,10 @@ a {
     text-decoration: none;
 }
 
+li {
+    list-style: none;
+}
+
 .sentence {
     font-family:"ヒラギノ丸ゴ Pro W4","ヒラギノ丸ゴ Pro","Hiragino Maru Gothic Pro","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","HG丸ｺﾞｼｯｸM-PRO","HGMaruGothicMPRO";  
     font-size: 20px;
@@ -45,16 +49,12 @@ a {
     padding-bottom: 3px;
 }
 
-nav {
+.nav-head {
     display: flex;
 }
 
-nav ul {
+.nav-head ul {
     display: flex;
-}
-
-nav li {
-    list-style: none;
 }
 
 nav a {
@@ -156,8 +156,11 @@ nav a {
     background-position: center center;
     background-size: cover;
     display: flex;
-    position: relative;
     overflow: hidden;
+}
+
+.hamburger {
+    display: none;
 }
 
 .firstView {
@@ -647,6 +650,98 @@ footer p {
 
     .bg-switcher {
         width: 100vw;
+        position: relative;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        border-radius: 3px;
+        top: 10px;
+        right: 10px;
+    }
+
+    .hamburger span {
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background: #fff;
+        width: 45%;
+    }
+
+    .hamburger span:nth-child(1) {
+        top:15px; 
+    }
+      
+    .hamburger span:nth-child(2) {
+        top:23px;
+    }
+      
+    .hamburger span:nth-child(3) {
+        top:31px;
+    }
+    
+    .hamburger.active span:nth-child(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+      
+    .hamburger.active span:nth-child(2) {
+        opacity: 0;/*真ん中の線は透過*/
+    }
+      
+    .hamburger.active span:nth-child(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+
+    .navigation {
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 1rem;
+        opacity: 0;
+        background-color: rgba(0,0,0,0.7);
+        visibility: hidden;
+        transition: opacity .5s, visibility .5s;
+    }
+
+    .navigation.active {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-items {
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 100px;
+    }
+
+    .nav-items-item a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        font-size: 24px;
+        font-family: 'ja-main';
+        margin-bottom: 30px;
+    }
+
+    .hamburger.active {
+        display: block;
     }
 
     .firstView .icon {
@@ -696,13 +791,13 @@ footer p {
     }
 
     .explanation {
-        width: 90%;
+        width: 70%;
         padding: 10px;
         text-align: center;
     }
 
     .theme {
-        font-size: 17px;
+        font-size: 15px;
         margin-bottom: 20px;
     }
 
@@ -780,7 +875,7 @@ footer p {
     }
 
     .card-sentence .card-title {
-        font-size: 23px;
+        font-size: 18px;
         margin: 0 auto 30px;
     }
 
@@ -896,10 +991,11 @@ footer p {
     .access-how {
         flex-direction: column;
         text-align: center;
+        width: 80%;
     }
 
     .access-how img {
-        width: 300px;
+        width: 100%;
         margin: 20px auto 0;
     }
 
