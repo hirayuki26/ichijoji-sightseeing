@@ -163,6 +163,10 @@ nav a {
     display: none;
 }
 
+.navigation {
+    display: none;
+}
+
 .firstView {
     text-align: center;
     position: absolute;
@@ -707,6 +711,7 @@ footer p {
 
     .navigation {
         position: relative;
+        display: block;
         width: 100vw;
         height: 100vh;
         top: 0;
