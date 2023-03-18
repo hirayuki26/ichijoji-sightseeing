@@ -442,6 +442,7 @@ nav a {
 
 .slide-box {
     display: flex;
+    align-items: center;
 }
 
 .slide-img {
@@ -449,6 +450,7 @@ nav a {
     max-width: 700px;
     position: relative;
     margin: 20px;
+    align-items: center;
 }
 
 .first-img {
@@ -472,6 +474,7 @@ nav a {
     margin: 20px;
     padding: 20px;
     text-align: center;
+    align-items: center;
 }
 
 .slide-title {
