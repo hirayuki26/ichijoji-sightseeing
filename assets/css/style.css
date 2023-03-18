@@ -645,6 +645,10 @@ footer p {
         display: none;
     }
 
+    .bg-switcher {
+        width: 100vw;
+    }
+
     .firstView .icon {
         width: 100px;
     }
@@ -708,7 +712,20 @@ footer p {
     }
 
     #area-map {
-        display: none;
+        margin: 50px 0;
+    }
+
+    #area-map .map {
+        width: 300px;
+    }
+
+    .map img {
+        width: 100%;
+    }
+
+    .flag img {
+        width: 25px;
+        height: 25px;
     }
     
     .session {
