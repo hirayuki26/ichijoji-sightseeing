@@ -41,7 +41,7 @@ a {
 }
 
 .underline {
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid #f78989;
     padding-bottom: 3px;
 }
 
@@ -900,7 +900,7 @@ footer p {
 
     .access-how img {
         width: 300px;
-        margin: 20px 20px 0;
+        margin: 20px auto 0;
     }
 
     footer {
