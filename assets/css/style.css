@@ -91,14 +91,14 @@ nav a {
 }
 
 .link img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
 }
 
 .link p {
-    font-size: 20px;
+    font-size: 16px;
     font-family: 'ja-main';
-    margin-top: 10px;
+    margin-top: 3px;
     color: #444444;
 }
 
@@ -239,7 +239,7 @@ nav a {
 
 .explanation {
     width: 500px;
-    text-align-last: left;
+    text-align: left;
     padding-right: 25px;
 }
 
@@ -253,12 +253,12 @@ nav a {
     line-height: 35px;
 }
 
-.spot {
+.where {
     width: 500px;
     padding-left: 25px;
 }
 
-.spot img {
+.where img {
     width: 500px;
     margin: 0 auto;
 }
@@ -349,7 +349,7 @@ nav a {
 
 .nature-sentence {
     width: 700px;
-    text-align-last: left;
+    text-align: left;
     margin: 50px auto 0;
 }
 
@@ -483,7 +483,7 @@ nav a {
 }
 
 .slide-sentence .sentence {
-    text-align-last: left;
+    text-align: left;
     margin-top: 30px;
 }
 
@@ -516,7 +516,7 @@ nav a {
 #food .ramen-explanation {
     width: 60%;
     margin: 60px auto 0;
-    text-align-last: left;
+    text-align: left;
 }
 
 .food-map {
@@ -626,4 +626,272 @@ footer p {
     color: #444444;
     font-family: 'en-main';
     font-size: 20px;
+}
+
+@media all and (max-width:480px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    h3 {
+        font-size: 23px;
+    }
+
+    .sentence {
+        font-size: 13px;
+    }
+
+    .navi {
+        display: none;
+    }
+
+    .firstView .icon {
+        width: 100px;
+    }
+
+    .firstView .ja-title {
+        font-size: 25px;
+    }
+
+    .firstView .en-title {
+        font-size: 30px;
+    }
+
+    #about {
+        margin-top: 50px;
+    }
+
+    .big-title {
+        font-size: 40px;
+    }
+
+    .small-title {
+        font-size: 25px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+        margin-top: 5px;
+    }
+
+    #about .about-content {
+        margin-top: 15px;
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .where {
+        width: 90%;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .where img {
+        width: 100%;
+    }
+
+    .explanation {
+        width: 90%;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .theme {
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+
+    .explanation .sentence {
+        line-height: 25px;
+        text-align-last: left;
+    }
+
+    #area-map {
+        display: none;
+    }
+    
+    .session {
+        padding: 0.7rem;
+    }
+
+    .title-img img {
+        width: 100px;
+    }
+
+    .content {
+        padding: 100px 0 70px;
+    }
+    
+    #nature .slider {
+        width: 250px;
+    }
+
+    .nature-img {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .nature-img img {
+        width: 100%;
+    }
+
+    .nature-sentence {
+        width: 250px;
+        margin: 30px auto 0;
+    }
+
+    .card {
+        margin: 30px auto;
+    }
+
+    #history .card {
+        margin: 0;
+    }
+
+    .keep {
+        flex-direction: column;
+    }
+
+    .reverse {
+        flex-direction: column-reverse;
+    }
+
+    .card-sentence {
+        line-height: 20px;
+        width: 250px;
+    }
+
+    .card-sentence .card-title {
+        font-size: 23px;
+        margin: 0 auto 30px;
+    }
+
+    .card-img {
+        width: 200px;
+        margin: 30px auto;
+    }
+
+    .card-img img {
+        width: 100%;
+    }
+
+    .connection {
+        margin-top: 50px;
+    }
+
+    #spot .slick-initialized .slick-slide {
+        margin: 50px 20px 0;
+        padding: 30px 10px 10px;
+    }
+
+    .slide-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .slide-img {
+        width: 80%;
+        margin: 10px;
+    }
+
+    .first-img {
+        width: 90%;
+        top: 0px;
+        left: 0px;
+    }
+
+    .second-img {
+        width: 80%;
+        top: -30px;
+        left: 50px;
+    }
+
+    .slide-sentence {
+        width: 80%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .slide-title {
+        font-size: 18px;
+    }
+
+    .slide-sentence .sentence {
+        margin: 20px auto 20px;
+    }
+
+    #food .ramen-explanation {
+        margin-top: 30px;
+    }
+
+    .food-map {
+        width: 90%;
+        margin-top: 40px;
+    }
+
+    .open-btn {
+        margin-top: 20px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .open-box {
+        margin-top: 50px;
+    }
+
+    .food-detail {
+        margin: 70px 20px 0;
+        border: 2px solid #FDDD6A;
+    }
+
+    .food-detail .ramen-title {
+        font-size: 18px;
+    }
+
+    .food-detail .food-img {
+        width: 80%;
+        margin: 50px auto;
+    }
+
+    .food-img img {
+        width: 100px;
+    }
+
+    .food-detail .detail {
+        margin: 20px auto;
+        width: 70%;
+    }
+
+    #access {
+        margin: 50px 0;
+    }
+
+    #access h3 {
+        margin: 40px auto 30px;
+    }
+
+    .access-map iframe {
+        width: 350px;
+        height: 230px;
+    }
+
+    .access-how {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .access-how img {
+        width: 300px;
+        margin: 20px 20px 0;
+    }
+
+    footer {
+        padding: 10px 0;
+        height: 30px;
+    }
+
+    footer p {
+        font-size: 13px;
+    }
 }

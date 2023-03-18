@@ -16,13 +16,23 @@ $(function($) {
     });
 
     $('.slider-card').slick({
-        arrows: true,
+        arrows: false,
         autoplay: false,
-        dots: false,
+        dots: true,
         slidesToShow: 1,
         centerMode: false,
         centerPadding: '0%',
         slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 480,
+                settings: {
+                    arrows: false,
+                    dots: false,
+                },
+            },
+        ],
+        respondTo: 'slider-card',
     });
 
     $('.open-btn').on('click', function() {
