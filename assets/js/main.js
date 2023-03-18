@@ -11,7 +11,7 @@ $(function($) {
         dots: false,
         slidesToShow: 1,
         centerMode: true,
-        centerPadding: '0px',
+        centerPadding: '0%',
         slidesToScroll: 1,
     });
 
@@ -20,8 +20,8 @@ $(function($) {
         autoplay: false,
         dots: false,
         slidesToShow: 1,
-        centerMode: true,
-        centerPadding: '0px',
+        centerMode: false,
+        centerPadding: '0%',
         slidesToScroll: 1,
     });
 
