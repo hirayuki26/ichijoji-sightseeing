@@ -50,4 +50,11 @@ $(function($) {
             document.getElementById('change').src='assets/images/open.png';
         }
     });
+
+    $('.pin-btn').on('click', function() {
+        if ($('.open-box').is(':hidden')) {
+            $('.open-box').slideDown();
+            document.getElementById('change').src='assets/images/close.png';
+        }
+    });
 });

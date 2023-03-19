@@ -527,9 +527,30 @@ nav a {
 }
 
 .food-map {
-    max-width: 1000px;
+    width: 1000px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.food-map img {
     width: 100%;
-    margin-top: 60px;
+}
+
+.pin img {
+    width: 60px;
+    height: 60px;
+}
+
+.pin-tori {
+    position: absolute;
+    top: 25%;
+    left: 33%;
+}
+
+.pin-tenichi {
+    position: absolute;
+    top: 80%;
+    left: 42%;
 }
 
 .open-box {
@@ -945,6 +966,19 @@ footer p {
     .food-map {
         width: 90%;
         margin-top: 40px;
+    }
+
+    .food-map img {
+        width: 100%;
+    }
+
+    .pin img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .pin-tenichi {
+        left: 40%;
     }
 
     .open-btn {
