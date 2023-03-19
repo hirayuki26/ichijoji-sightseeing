@@ -24,7 +24,7 @@ $(function($) {
     });
 
     $('.slider-card').slick({
-        arrows: false,
+        arrows: true,
         autoplay: false,
         dots: true,
         slidesToShow: 1,
@@ -36,11 +36,9 @@ $(function($) {
                 breakpoint: 480,
                 settings: {
                     arrows: false,
-                    dots: false,
                 },
-            },
-        ],
-        respondTo: 'slider-card',
+            }
+        ]
     });
 
     $('.open-btn').on('click', function() {
