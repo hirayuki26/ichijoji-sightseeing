@@ -967,12 +967,12 @@ footer p {
     }
 
     .food-detail .food-img {
-        width: 80%;
+        width: 90%;
         margin: 50px auto;
     }
 
     .food-img img {
-        width: 100px;
+        width: 80px;
     }
 
     .food-detail .detail {
