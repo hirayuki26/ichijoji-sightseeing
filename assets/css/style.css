@@ -316,7 +316,7 @@ nav a {
 
 .session {
     text-align: center;
-    padding: 1.5rem;
+    padding: 20px;
     position: relative;
 }
 
@@ -358,6 +358,24 @@ nav a {
     width: 700px;
     text-align: left;
     margin: 50px auto 0;
+}
+
+#nature .slick-next {
+    right: -45px;
+}
+
+#nature .slick-next:before {
+    color: #81DC73;
+    font-size: 50px;
+}
+
+#nature .slick-prev {
+    left: -75px;
+}
+
+#nature .slick-prev:before {
+    color: #81DC73;
+    font-size: 50px;
 }
 
 #history {
@@ -434,8 +452,9 @@ nav a {
 
 } */
 
-.slide-card {
+.slider-card {
     width: 80%;
+    margin: 0 auto;
 }
 
 #spot .slick-initialized .slick-slide {
@@ -443,8 +462,8 @@ nav a {
     align-items: center;
     background-color: #ffffff;
     border-radius: 10px;
-    margin: 100px 50px 0 50px;
-    padding: 70px 20px 20px;
+    margin: 100px 50px 20px;
+    padding: 70px 20px 10px;
 }
 
 .slide-box {
@@ -453,7 +472,7 @@ nav a {
 }
 
 .slide-img {
-    width: 50%;
+    width: 60%;
     max-width: 700px;
     position: relative;
     margin: 20px;
@@ -491,14 +510,39 @@ nav a {
 
 .slide-sentence .sentence {
     text-align: left;
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 #spot .content {
     padding-bottom: 0;
 }
 
+#spot .slick-dots {
+    bottom: 20px;
+}
 
+#spot .container {
+    padding-bottom: 10px;
+}
+
+#spot .slick-next {
+    right: -25px;
+}
+
+#spot .slick-next:before {
+    color: #ABB3FF;
+    font-size: 50px;
+    left: 0;
+}
+
+#spot .slick-prev {
+    left: -40px;
+}
+
+#spot .slick-prev:before {
+    color: #ABB3FF;
+    font-size: 50px;
+}
 
 /* #spot .slick-initialized .slick-slide {
     display: flex;
@@ -879,6 +923,24 @@ footer p {
         margin: 30px auto 0;
     }
 
+    #nature .slick-next {
+        right: -25px;
+    }
+    
+    #nature .slick-next:before {
+        color: #81DC73;
+        font-size: 20px;
+    }
+    
+    #nature .slick-prev {
+        left: -25px;
+    }
+    
+    #nature .slick-prev:before {
+        color: #81DC73;
+        font-size: 20px;
+    }
+
     .card {
         margin: 30px auto;
     }
@@ -929,7 +991,7 @@ footer p {
     }
 
     .slide-img {
-        width: 80%;
+        width: 100%;
         margin: 10px;
     }
 
@@ -946,7 +1008,7 @@ footer p {
     }
 
     .slide-sentence {
-        width: 80%;
+        width: 100%;
         margin: 10px;
         padding: 10px;
     }
@@ -957,6 +1019,10 @@ footer p {
 
     .slide-sentence .sentence {
         margin: 20px auto 20px;
+    }
+
+    #spot .slick-dots {
+        bottom: 5px;
     }
 
     #food .ramen-explanation {
