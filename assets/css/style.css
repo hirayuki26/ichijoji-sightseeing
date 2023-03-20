@@ -170,7 +170,7 @@ nav a {
 }
 
 .bg-switcher {
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     background-image: url(../images/mansyuin1.jpg);
     background-color:rgba(255,255,255,0.3);
@@ -755,7 +755,6 @@ footer p {
     }
 
     .bg-switcher {
-        width: 100vw;
         position: relative;
     }
 
